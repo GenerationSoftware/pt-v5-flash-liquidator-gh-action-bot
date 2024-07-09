@@ -1,4 +1,4 @@
-name: CronJob - Liquidator Bot - Optimism
+name: CronJob - Flash Liquidator Bot - Optimism
 on:
   schedule:
     - cron: "*/5 * * * *" # ie. 4:05pm, 4:10pm, 4:15pm ... etc.
@@ -16,7 +16,7 @@ env:
 permissions: write-all
 jobs:
   runCLI:
-    name: Liquidator Bot
+    name: Flash Liquidator Bot
     runs-on: ${{ matrix.os }}
     strategy:
       max-parallel: 1
@@ -65,5 +65,5 @@ jobs:
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `Liquidator bot failed for run at "$date"__"$time": Exit Code 1`
+              title: `Flash Liquidator bot failed for run at "$date"__"$time": Exit Code 1`
             })
