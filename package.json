@@ -1,9 +1,9 @@
 {
-    "name": "pt-v5-liquidator-gh-action-bot",
+    "name": "pt-v5-flash-liquidator-gh-action-bot",
     "version": "1.0.0",
-    "description": "PoolTogether v5 Liquidator cron bot which runs periodically on GitHub Actions.",
+    "description": "PoolTogether v5 Flash Liquidator cron bot which runs periodically on GitHub Actions.",
     "main": "index.js",
-    "repository": "git@github.com:generationsoftware/pt-v5-liquidator-gh-action-bot.git",
+    "repository": "git@github.com:generationsoftware/pt-v5-flash-liquidator-gh-action-bot.git",
     "author": {
         "name": "G9 Software Inc.",
         "url": "https://github.com/generationsoftware"
@@ -15,7 +15,7 @@
         "start": "tsx index.ts"
     },
     "devDependencies": {
-        "@generationsoftware/pt-v5-autotasks-library": "1.2.5",
+        "@generationsoftware/pt-v5-autotasks-library": "1.3.3",
         "@generationsoftware/pt-v5-utils-js": "1.2.0",
         "@types/node": "^20.11.28",
         "chalk": "^5.3.0",
