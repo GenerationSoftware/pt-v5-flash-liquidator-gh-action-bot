@@ -1,7 +1,7 @@
 name: CronJob - Flash Liquidator Bot - Base
 on:
   schedule:
-    - cron: "*/5 * * * *" # ie. 4:05pm, 4:10pm, 4:15pm ... etc.
+    - cron: "30 * * * *" # ie. 4:30pm, 5:30pm ... etc.
   push:
 env:
   CHAIN_ID: 8453
